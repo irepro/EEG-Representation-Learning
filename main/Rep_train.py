@@ -14,17 +14,17 @@ from loss import TripletSigmoidLoss
 import torch
 
 # batch size
-batch_size = 4
+batch_size = 16
 learning_rate = 0.001
 epochs = 5
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "5"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 device = "cpu"
 #torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 #"cpu"
 
 #dataset 몇개를 사용할 것인지 결정 ex)1~4
-idx = list(range(1,2))
+idx = list(range(1,11))
 tr, va, te = utils.load_dataset(idx).call(3)
 
 # dataset loader
@@ -46,7 +46,6 @@ criterion = TripletSigmoidLoss.TripletSigmoidLoss(Kcount=5, scale_int=1, sample_
 
 #use Adam optimizer
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-scheduler = StepLR(optimizer, step_size=3, gamma=0.5)
 
 # save epoch loss
 loss_tr = []
