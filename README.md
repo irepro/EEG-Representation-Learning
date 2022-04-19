@@ -16,7 +16,7 @@
 * https://osf.io/pq7vb/
 
 ## 사용법
-`TripletSigmoidLoss.py`는 자가-지도 학습 단계에서 사용되는 삼중항 손실 계산 과정을 포함하고 있으며, `ERL_DCCN.py`는 제안된 전체 신경망 구조를 포함하고 있다. `utils.py`과 `utilLoader.py`는 실험과정에서 사용될 학습 데이터셋의 불러오기 및 전처리와 관련됨 함수들을 담고 있다. `Pretrain_model.pth`는 자가-지도 학습을 진행한 신경망 파라미터이며 `Supervised_train_model.pth`는 지도 학습까지 완료한 신경망 파라미터의 정보를 담고 있다.
+`TripletSigmoidLoss.py`는 자가-지도 학습 단계에서 사용되는 삼중항 손실 계산 과정을 포함하고 있으며, `ERL_DCCN.py`는 제안된 신경망 구조를 포함하고 있다. `utils.py`과 `utilLoader.py`는 실험과정에서 사용될 학습 데이터셋의 불러오기 및 전처리와 관련됨 함수들을 담고 있다. `Pretrain_model.pth`는 자가-지도 학습을 진행한 신경망 파라미터이며 `Supervised_train_model.pth`는 지도 학습까지 완료한 신경망 파라미터의 정보를 담고 있다.
 
 ## 만든이
 익명 저자, 익명 기관
