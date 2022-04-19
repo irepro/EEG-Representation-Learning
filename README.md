@@ -12,7 +12,7 @@
 * [Pytorch 1.4.0+](https://pytorch.org//)
 
 ## 데이터셋
-To download Imagined speech dataset
+발화 상상 데이터셋
 * https://osf.io/pq7vb/
 
 ## 사용법
